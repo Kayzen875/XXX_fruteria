@@ -1,0 +1,45 @@
+
+h1{
+    text-align: center;
+}
+
+.gridContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30%;
+    gap: 20px;
+}
+
+.producto{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #5cb01f;
+    color:#e1f2de;
+    align-items: center;
+    font-size: larger;
+}
+
+.carrito{
+    background-color: #2d5e2c;
+    color:#e1f2de;
+    font-size: larger;
+}
+
+.right{
+    margin-left: 70%;
+}
+
+.button{
+    cursor: pointer;
+    background-color: #faf1dd;
+    color: #654928;
+    padding: 5px;
+}
+
+.total{
+    margin-top: 5px;
+    border: 1px solid black;
+    border-right-style: none;
+    font-size: larger;
+}
