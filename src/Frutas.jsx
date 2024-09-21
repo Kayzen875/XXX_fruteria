@@ -34,7 +34,7 @@ function Productos() {
                 {productes.map(e => <div className="producto" key={e.id}><p>{e.nom + " (" + e.preu + " €/u)"}</p> <span className="button" onClick={() => Afegir(e)}>Afegir</span></div>)}
             </div>
             <div>
-                {ticket.map(e => <div className="carrito" key={e.id}><p>{e.nom}</p><span className="button right" onClick={() => Treure(e)}>Treure</span><p>{e.quantity}u x {e.preu} €/u = {(e.quantity * e.preu).toFixed(2)}</p></div>)}
+                {ticket.map(e => <div className="carrito" key={e.id}><p>{e.nom}</p><p>{e.quantity}u x {e.preu} €/u = {(e.quantity * e.preu).toFixed(2)}</p><span className="button" onClick={() => Treure(e)}>Treure</span></div>)}
                 <div className="total"><p style={{marginLeft : "5px"}}>Total: {total.toFixed(2)} €</p></div>
             </div>
         </div>
